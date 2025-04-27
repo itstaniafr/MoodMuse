@@ -22,3 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// Check login status
+const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+// Find the nav item
+const navAction = document.getElementById('nav-action');
+
+// If user is logged in, show 'Profile' instead of 'Signup'
+if (isLoggedIn === 'true') {
+  navAction.innerHTML = '<a href="profile.html">Profile</a>';
+}

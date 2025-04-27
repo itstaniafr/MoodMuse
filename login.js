@@ -19,7 +19,8 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
       { email: "xraizelx2504@gmail.com", password: "raizel$123" },
       { email: "navyamehtaa@gmail.com", password: "abc123" }
     ];
-  
+    localStorage.setItem('isLoggedIn', 'true'); // Set login status in local storage
+
     const isValidUser = validCredentials.some(
       cred => cred.email === email && cred.password === password
     );
