@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Profile | MoodMuse</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <div class="background-overlay">
+    <header>
+      <div class="logo">MoodMuse</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <h1>Welcome to Your MoodMuse Profile</h1>
+
+      <div class="profile-card">
+        <img src="guest.jpg" alt="User Profile Picture" class="profile-pic">
+        <h2 id="username">Guest User</h2>
+        <p><strong>Last Mood:</strong> <span id="last-mood">Unknown</span></p>
+        <button class="button" onclick="retakeQuiz()">Take Mood Quiz Again</button>
+      </div>
+
+      <section class="history-section">
+        <h2>Your Past Recommendations</h2>
+        <ul id="history-list">
+          <li>No history yet. Take a quiz to start!</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

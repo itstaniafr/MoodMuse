@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodMuse</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-overlay">
+    <header>
+      <div class="logo">MoodMuse</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Books & Movies That Match Your Mood</h1>
+        <p>Let your emotions guide your next story. Get personalized recommendations based on how you feel.</p>
+        <button onclick="getStarted()">Get Started</button>
+      </div>
+    </section>
+  
+    <section class="features">
+      <div class="feature-item">
+        <h2>Personalized Recommendations</h2>
+        <p>Receive tailored suggestions based on your current mood.</p>
+      </div>
+      <div class="feature-item">
+        <h2>Community Reviews</h2>
+        <p>Read and share reviews with a community of fellow enthusiasts.</p>
+      </div>
+      <div class="feature-item">
+        <h2>Track Your Journey</h2>
+        <p>Keep track of what you've read or watched and your thoughts on them.</p>
+      </div>
+
+      <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>1. Choose Your Mood</h3>
+            <p>Tell us how you're feeling today.</p>
+          </div>
+          <div class="step">
+            <h3>2. Get Suggestions</h3>
+            <p>Receive personalized book and movie recommendations.</p>
+          </div>
+          <div class="step">
+            <h3>3. Enjoy & Share</h3>
+            <p>Watch, read, and share your journey with others!</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-item">
+          <p>"MoodMuse helped me find the perfect movie after a tough day. Love it!"</p>
+          <h4>- Sarah L.</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"I discovered so many new books based on my moods. Highly recommend!"</p>
+          <h4>- Raj P.</h4>
+        </div>
+      </section>
+      
+      <section class="newsletter">
+        <h2>Stay Updated!</h2>
+        <p>Get the latest recommendations and features directly in your inbox.</p>
+        <form id="subscribe-form" class="newsletter-form">
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-message" style="margin-top: 10px; color: #4a148c;"></p>
+      </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

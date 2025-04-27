@@ -1,0 +1,223 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background with Image + Gradient Overlay */
+.background-overlay {
+  background: 
+    linear-gradient(to right, rgba(153, 59, 126, 0.7), rgba(64, 101, 165, 0.7)),
+    url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Header Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a148c;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6a1b9a;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: calc(100vh - 80px);
+}
+
+.hero-content {
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Button */
+button {
+  background-color: #4a148c;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+  transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background-color: rgba(255, 255, 255, 0.41); /* Slight see-through effect */
+  text-align: center;
+}
+
+.feature-item {
+  max-width: 600px;
+}
+
+.feature-item h2 {
+  font-size: 2rem;
+  color: #4a148c;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* How it Works Section */
+.how-it-works {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #4a148c;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #4a148c;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: rgba(251, 239, 255, 0.837);
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #4a148c;
+}
+
+.testimonial-item {
+  margin-bottom: 30px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 12px 20px;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  outline: none;
+  width: 250px;
+}
+
+.newsletter-form button {
+  background-color: #4a148c;
+  color: #fff;
+  padding: 12px 25px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #6a1b9a;
+}

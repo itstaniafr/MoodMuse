@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Mood Result | MoodMuse</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
+
+  <div class="background-overlay">
+    <header>
+      <div class="logo">MoodMuse</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="result-container">
+      <h1>Your Mood Result</h1>
+      <div class="result-card">
+        <img id="mood-image" src="" alt="Mood Image">
+        <h2 id="mood-title">Loading...</h2>
+        <p id="mood-description">Loading your recommendation...</p>
+      </div>
+      <button onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+
+  </div>
+
+  <script src="results.js"></script>
+</body>
+</html>

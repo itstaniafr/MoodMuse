@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz | MoodMuse</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="background-overlay">
+        <header>
+          <div class="logo">MoodMuse</div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="quiz-wrapper">
+          <div class="quiz-container" id="quiz">
+            <div class="question" id="question">Loading question...</div>
+            <div class="options" id="options"></div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+          </div>
+        </div>
+      
+        <div id="result" class="result" style="display: none;"></div>
+      
+      </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
